@@ -1,0 +1,45 @@
+---
+title: 'Pengantar Sistem Digital'
+description: 'Kumpulan Materi semester 1 PSD'
+pubDate: 'August 23 2026'
+heroImage: '../../assets/blog-placeholder-3.jpg'
+---
+
+# WEEK 5
+23/09/2026
+banyaknya multiplexer (MUX) adalah sebanyak output. misal 2 output maka 2 MUX  
+
+Gray code to Binary using MUX (given gray with ABC and binary with XYZ)  
+1. truth table
+2. X = A
+3. create the circuit (input A B C, output X Y Z)
+4. m = 2, the output (Y Z), X not included because X = A, "banyaknya mux yang akan digunakan"
+5. n = 3, the input itself (A B C), "size muxnya"
+6. MUX for X and Z (2^n to 1)
+
+Truth table:  
+
+```markdown
+Gray  | Binary|
+A B C | X Y Z | Rudimentary function C for Y | Rudimentary function C for Z
+------|-------|------------------------------|-----------------------------
+0 0 0   0 0 0   F = 0                          F = C
+0 0 1   0 0 1   
+0 1 0   0 1 0   F = 1                          F = C'
+0 1 1   0 1 1   
+1 0 0   1 0 0   F = 1                          F = C'
+1 0 1   1 0 1   
+1 1 0   1 1 0   F = 0                          F = C'
+1 1 1   1 1 1   
+conclusion from the truth table
+X = A
+```
+
+explanation for (6):
+input (00111100)
+output (Y)
+
+input (01101001)
+output (Z)
+
+NOTE: gray code is actually what we usually use on Discrete Math
