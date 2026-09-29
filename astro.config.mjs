@@ -13,7 +13,8 @@ import remarkBreaks from "remark-breaks";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://example.com",
+    site: "https://kemtan.github.io",
+    base: "/blogKuliah",
     integrations: [mdx(), sitemap()],
     markdown: {
         remarkPlugins: [remarkMath, remarkBreaks],
